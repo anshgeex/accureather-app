@@ -2,3 +2,4 @@
 .env
 google-service-account.json
 google_report_sheet.xlsx
+.idea/*

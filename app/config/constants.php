@@ -26,7 +26,7 @@ $SHEET_HEADINGS = [
 ];
 
 $EMAIL_TEMPLATE = [
-    'email'=>'accu-weather-app@yopmail.com',
+    'email'=>'zahin@iion.io', // Email id on which the Sheet will be sent after creation
     'subject'=>'Weather Report for Top 50 Cities - Attached Excel File',
     'body'=>'<p>I hope this message finds you well.</p>
         <p>
