@@ -6,14 +6,14 @@
 
 3.) Update [constants.php](app%2Fconfig%2Fconstants.php) as per requirements.
 
-4.) Open APP_URL/generate-report. APP_URL => server url where application is running.
+4.) Open APP_URL/generate-report. <br />APP_URL => server url where application is running.
 
 Eg. https://abc.com/generate-report
 
 
-5.) CRON Setup<br />
-0 0 * * 0 wget https://abc.com/generate-report
-Replace abc.com with the ip address or server URL
+5.) CRON Setup<br /> <br />
+`0 0 * * 0 wget https://abc.com/generate-report`
+<br /> <br />Replace <b>abc.com</b> with the ip address or server URL <br />
 This will RUN the CRON every week on Sunday at 12:00 AM
 
 
