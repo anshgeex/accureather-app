@@ -43,23 +43,7 @@ class AccuWeather {
             $WeatherData[] = SHEET_HEADINGS;
             $this->Obj_CurrentConditionData = $currentCondtion['response'];
             
-            foreach ($locationsResponse['response'] as $key => $locations) {
-                // $WeatherData[] = [
-                //     'name'=>$locations['EnglishName'],
-                //     'country'=>$locations['Country']['EnglishName'],
-                //     'region'=>$locations['Region']['EnglishName'],
-                //     'Timezone' => $locations['TimeZone']['Name'],
-                //     'Rank' => $locations['Rank'],
-    
-                //     'Latitude' => $currentCondtion[$key]['GeoPosition']['Latitude'],
-                //     'Longitude' => $currentCondtion[$key]['GeoPosition']['Longitude'],
-                //     'WeatherText' => $currentCondtion[$key]['WeatherText'],
-                //     'IsDayTime' => $currentCondtion[$key]['IsDayTime'] == 1 ? 'TRUE':'FALSE',
-                //     'TemperatureCelsiusC' => $currentCondtion[$key]['Temperature']['Metric']['Value'],
-                //     'TemperatureFahrenheitF' => $currentCondtion[$key]['Temperature']['Imperial']['Value'],
-                //     'LastUpdatedAt' => DateTimeFormat($currentCondtion[$key]['LocalObservationDateTime'], $locations['TimeZone']['Name'], $locations['TimeZone']['Code']),
-                // ];
-                
+            foreach ($locationsResponse['response'] as $key => $locations) {                
                 $_LocationData= [
                     $locations['EnglishName'],
                     $locations['Country']['EnglishName'],
