@@ -120,6 +120,7 @@ class AccuWeather {
                 $item['WeatherText'],
                 $item['IsDayTime'] == 1 ? 'TRUE':'FALSE',
                 $item['Temperature']['Metric']['Value'],
+                $item['Temperature']['Imperial']['Value'],
                 DateTimeFormat($item['LocalObservationDateTime'], $item['TimeZone']['Name'], $item['TimeZone']['Code'])
             ];
         }
